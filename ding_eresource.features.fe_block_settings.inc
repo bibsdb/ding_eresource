@@ -21,6 +21,12 @@ function ding_eresource_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'bibsdb' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bibsdb',
+        'weight' => 0,
+      ),
       'ddbasic' => array(
         'region' => '',
         'status' => 0,

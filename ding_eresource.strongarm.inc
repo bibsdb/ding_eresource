@@ -35,7 +35,7 @@ function ding_eresource_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_ding_eresource';
-  $strongarm->value = '0';
+  $strongarm->value = '1';
   $export['comment_ding_eresource'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -86,6 +86,12 @@ function ding_eresource_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'workflow_tab' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -94,6 +100,12 @@ function ding_eresource_strongarm() {
         ),
         'path' => array(
           'weight' => '7',
+        ),
+        'metatags' => array(
+          'weight' => '40',
+        ),
+        'redirect' => array(
+          'weight' => '30',
         ),
       ),
       'display' => array(),
