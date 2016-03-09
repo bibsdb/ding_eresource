@@ -473,8 +473,7 @@ function ding_eresource_field_default_field_instances() {
     'bundle' => 'ding_eresource',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'For an e-resource with free access, leave this field empty. Otherwise the chosen access category is displayed to the user. 
-If proxy is enabled, this category also controls whether or not prefix the e-resource link with the proxy. ',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -918,8 +917,6 @@ If proxy is enabled, this category also controls whether or not prefix the e-res
   t('Body');
   t('Comment');
   t('Files');
-  t('For an e-resource with free access, leave this field empty. Otherwise the chosen access category is displayed to the user. 
-If proxy is enabled, this category also controls whether or not prefix the e-resource link with the proxy. ');
   t('Information');
   t('Kan bruges på desktop');
   t('Kan bruges på smartphone');
