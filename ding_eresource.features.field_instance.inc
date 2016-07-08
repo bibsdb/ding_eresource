@@ -251,171 +251,6 @@ function ding_eresource_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ding_eresource-field_bibsdb_eresource_ondesktop'
-  $field_instances['node-ding_eresource-field_bibsdb_eresource_ondesktop'] = array(
-    'bundle' => 'ding_eresource',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => 'Kan bruges på desktop',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 17,
-      ),
-      'search_result' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser_highlight' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_bibsdb_eresource_ondesktop',
-    'label' => 'Kan bruges på desktop',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 0,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 12,
-    ),
-  );
-
-  // Exported field_instance: 'node-ding_eresource-field_bibsdb_eresource_onmobile'
-  $field_instances['node-ding_eresource-field_bibsdb_eresource_onmobile'] = array(
-    'bundle' => 'ding_eresource',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => 'Kan bruges på smartphone',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 15,
-      ),
-      'search_result' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser_highlight' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_bibsdb_eresource_onmobile',
-    'label' => 'Kan bruges på smartphone',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 0,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 10,
-    ),
-  );
-
-  // Exported field_instance: 'node-ding_eresource-field_bibsdb_eresource_ontablet'
-  $field_instances['node-ding_eresource-field_bibsdb_eresource_ontablet'] = array(
-    'bundle' => 'ding_eresource',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => 'Kan bruges på tablet',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 16,
-      ),
-      'search_result' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser_highlight' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_bibsdb_eresource_ontablet',
-    'label' => 'Kan bruges på tablet',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 0,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 11,
-    ),
-  );
-
   // Exported field_instance: 'node-ding_eresource-field_bibsdb_eresource_period'
   $field_instances['node-ding_eresource-field_bibsdb_eresource_period'] = array(
     'bundle' => 'ding_eresource',
@@ -711,8 +546,8 @@ function ding_eresource_field_default_field_instances() {
           'styles' => array(
             'breakpoint_1' => 768,
             'breakpoint_2' => 480,
-            'fallback_style' => 'bibsdb_masonry_large',
-            'max_style' => 'bibsdb_masonry_large',
+            'fallback_style' => 'bibsdb_expose_large',
+            'max_style' => 'bibsdb_expose_large',
             'style_1' => 'ding_primary_small',
             'style_2' => 'ding_primary_small',
           ),
@@ -918,9 +753,6 @@ function ding_eresource_field_default_field_instances() {
   t('Comment');
   t('Files');
   t('Information');
-  t('Kan bruges på desktop');
-  t('Kan bruges på smartphone');
-  t('Kan bruges på tablet');
   t('Kontakt');
   t('Lead');
   t('Links til desktop-udgave / AppStore / Google Play mv. ');

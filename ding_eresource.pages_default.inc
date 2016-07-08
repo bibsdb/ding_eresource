@@ -125,27 +125,28 @@ function ding_eresource_default_page_manager_handlers() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-fbfd235a-51c8-4a24-ab53-9892a637a858';
+    $pane->pid = 'new-a33c579b-1af3-4581-8f91-8c04ab3543d5';
     $pane->panel = 'left_sidebar';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'ding_eresource-panel_pane_1';
+    $pane->type = 'block';
+    $pane->subtype = 'menu-menu-alle-online-tilbud';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'alphabetical-eresource-list',
-    );
+    $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'fbfd235a-51c8-4a24-ab53-9892a637a858';
-    $display->content['new-fbfd235a-51c8-4a24-ab53-9892a637a858'] = $pane;
-    $display->panels['left_sidebar'][0] = 'new-fbfd235a-51c8-4a24-ab53-9892a637a858';
+    $pane->uuid = 'a33c579b-1af3-4581-8f91-8c04ab3543d5';
+    $display->content['new-a33c579b-1af3-4581-8f91-8c04ab3543d5'] = $pane;
+    $display->panels['left_sidebar'][0] = 'new-a33c579b-1af3-4581-8f91-8c04ab3543d5';
     $pane = new stdClass();
     $pane->pid = 'new-98fddea0-c7eb-4b7c-82a3-be24fe3a73c2';
     $pane->panel = 'main_content';
@@ -180,7 +181,7 @@ function ding_eresource_default_page_manager_handlers() {
     $display->content['new-98fddea0-c7eb-4b7c-82a3-be24fe3a73c2'] = $pane;
     $display->panels['main_content'][0] = 'new-98fddea0-c7eb-4b7c-82a3-be24fe3a73c2';
   $display->hide_title = PANELS_TITLE_PANE;
-  $display->title_pane = 'new-fbfd235a-51c8-4a24-ab53-9892a637a858';
+  $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $export['node_view_panel_context_2'] = $handler;
 
@@ -199,7 +200,10 @@ function ding_eresource_default_page_manager_pages() {
   $page->admin_title = 'Ding E-resources';
   $page->admin_description = '';
   $page->path = 'e-resurser/!tid';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array(
     'tid' => array(
