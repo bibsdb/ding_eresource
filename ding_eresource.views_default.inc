@@ -115,20 +115,6 @@ function ding_eresource_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Kontekstuelt filter: Handler mangler eller er i stykker */
-  $handler->display->display_options['arguments']['field_ding_eresource_category_tid']['id'] = 'field_ding_eresource_category_tid';
-  $handler->display->display_options['arguments']['field_ding_eresource_category_tid']['table'] = 'field_data_field_ding_eresource_category';
-  $handler->display->display_options['arguments']['field_ding_eresource_category_tid']['field'] = 'field_ding_eresource_category_tid';
-  $handler->display->display_options['arguments']['field_ding_eresource_category_tid']['exception']['title'] = 'Alle';
-  $handler->display->display_options['arguments']['field_ding_eresource_category_tid']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['field_ding_eresource_category_tid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_ding_eresource_category_tid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_ding_eresource_category_tid']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['field_ding_eresource_category_tid']['specify_validation'] = TRUE;
-  $handler->display->display_options['arguments']['field_ding_eresource_category_tid']['validate']['type'] = 'taxonomy_term';
-  $handler->display->display_options['arguments']['field_ding_eresource_category_tid']['validate_options']['vocabularies'] = array(
-    'e_resource_category' => 'e_resource_category',
-  );
   /* Kontekstuelt filter: E-resurser hvor titel begynder med “%2” */
   $handler->display->display_options['arguments']['title']['id'] = 'title';
   $handler->display->display_options['arguments']['title']['table'] = 'node';
@@ -270,7 +256,7 @@ function ding_eresource_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['label'] = 'Linked title';
-  $handler->display->display_options['header']['area']['content'] = '<h3><a href="/e-resurser">Online</a></h3>';
+  $handler->display->display_options['header']['area']['content'] = '<h3><a href="/temaer/pa-nettet">Online</a></h3>';
   $handler->display->display_options['header']['area']['format'] = 'html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Felt: Indhold: Nid */
@@ -344,7 +330,7 @@ function ding_eresource_views_default_views() {
     t('No results text.'),
     t('E-resources alphabetic list'),
     t('Linked title'),
-    t('<h3><a href="/e-resurser">Online</a></h3>'),
+    t('<h3><a href="/temaer/pa-nettet">Online</a></h3>'),
   );
   $export['ding_eresource'] = $view;
 
