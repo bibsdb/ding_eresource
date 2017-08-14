@@ -13,12 +13,12 @@ function ding_eresource_menu_default_menu_custom() {
   // Exported menu: menu-alle-online-tilbud.
   $menus['menu-alle-online-tilbud'] = array(
     'menu_name' => 'menu-alle-online-tilbud',
-    'title' => 'På nettet',
+    'title' => 'E-bøger og medier',
     'description' => '',
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('På nettet');
+  t('E-bøger og medier');
 
 
   return $menus;

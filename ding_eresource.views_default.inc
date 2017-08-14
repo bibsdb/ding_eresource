@@ -51,21 +51,21 @@ function ding_eresource_views_default_views() {
   $handler->display->display_options['style_options']['class'] = 'list eresource-list';
   $handler->display->display_options['style_options']['wrapper_class'] = '';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Title */
+  /* Felt: Indhold: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Nid */
+  /* Felt: Indhold: Nid */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
   $handler->display->display_options['fields']['nid']['label'] = '';
   $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
-  /* Field: Global: Math expression */
+  /* Felt: Global: Matematisk udtryk */
   $handler->display->display_options['fields']['expression']['id'] = 'expression';
   $handler->display->display_options['fields']['expression']['table'] = 'views';
   $handler->display->display_options['fields']['expression']['field'] = 'expression';
@@ -74,25 +74,25 @@ function ding_eresource_views_default_views() {
   $handler->display->display_options['fields']['expression']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['expression']['precision'] = '0';
   $handler->display->display_options['fields']['expression']['expression'] = '!1 - [nid]';
-  /* Sort criterion: Content: Title */
+  /* Sorteringskriterie: Indhold: Titel */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Contextual filter: Content: Nid */
+  /* Kontekstuelt filter: Indhold: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
   $handler->display->display_options['arguments']['nid']['field'] = 'nid';
   $handler->display->display_options['arguments']['nid']['exception']['title'] = 'Alle';
   $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
-  /* Filter criterion: Content: Published */
+  /* Filterkriterie: Indhold: Udgivet */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
+  /* Filterkriterie: Indhold: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -107,7 +107,7 @@ function ding_eresource_views_default_views() {
   $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Title */
+  /* Felt: Indhold: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -115,7 +115,7 @@ function ding_eresource_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: E-resurser hvor titel begynder med “%2” */
+  /* Kontekstuelt filter: E-resurser hvor titel begynder med “%2” */
   $handler->display->display_options['arguments']['title']['id'] = 'title';
   $handler->display->display_options['arguments']['title']['table'] = 'node';
   $handler->display->display_options['arguments']['title']['field'] = 'title';
@@ -167,7 +167,7 @@ function ding_eresource_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['empty'] = FALSE;
-  /* No results behavior: Global: Unfiltered text */
+  /* Opførsel ved ingen resultater: Global: Ufiltreret tekst */
   $handler->display->display_options['empty']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['empty']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['empty']['area_text_custom']['field'] = 'area_text_custom';
@@ -176,12 +176,12 @@ function ding_eresource_views_default_views() {
   $handler->display->display_options['empty']['area_text_custom']['content'] = '<h2>E-resurser</h2>
 <p>E-resurser er elektroniske opslagsværker, aviser og tidsskrifter, e-bøger og andre netmedier, som biblioteket stiller gratis til rådighed for borgerne. Brug e-resurserne til at låne netmedier eller søge i databaser efter alverdens emner. De fleste e-resurser har fjernadgang. Det betyder, at du kan anvende dem hjemmefra fra en hvilken som helst internet-adgang. Det kræver blot, at du er bosat i kommunen og er indmeldt som låner på et af bibliotekerne. Alle kan benytte e-resurserne på biblioteket.</p>';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Relationship: Broken/missing handler */
+  /* Forbindelse: Handler mangler eller er i stykker */
   $handler->display->display_options['relationships']['field_ding_eresource_category_tid']['id'] = 'field_ding_eresource_category_tid';
   $handler->display->display_options['relationships']['field_ding_eresource_category_tid']['table'] = 'field_data_field_ding_eresource_category';
   $handler->display->display_options['relationships']['field_ding_eresource_category_tid']['field'] = 'field_ding_eresource_category_tid';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Broken/missing handler */
+  /* Felt: Handler mangler eller er i stykker */
   $handler->display->display_options['fields']['field_ding_eresource_category']['id'] = 'field_ding_eresource_category';
   $handler->display->display_options['fields']['field_ding_eresource_category']['table'] = 'field_data_field_ding_eresource_category';
   $handler->display->display_options['fields']['field_ding_eresource_category']['field'] = 'field_ding_eresource_category';
@@ -191,7 +191,7 @@ function ding_eresource_views_default_views() {
   $handler->display->display_options['fields']['field_ding_eresource_category']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_ding_eresource_category']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_ding_eresource_category']['empty'] = '<h2>E-resurser (no results text)<h/2>';
-  /* Field: Taxonomy term: Term description */
+  /* Felt: Ord i ordforråd: Beskrivelse af term */
   $handler->display->display_options['fields']['description']['id'] = 'description';
   $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['fields']['description']['field'] = 'description';
@@ -203,7 +203,7 @@ function ding_eresource_views_default_views() {
   $handler->display->display_options['fields']['description']['empty'] = 'No results text.';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Broken/missing handler */
+  /* Kontekstuelt filter: Handler mangler eller er i stykker */
   $handler->display->display_options['arguments']['field_ding_eresource_category_tid']['id'] = 'field_ding_eresource_category_tid';
   $handler->display->display_options['arguments']['field_ding_eresource_category_tid']['table'] = 'field_data_field_ding_eresource_category';
   $handler->display->display_options['arguments']['field_ding_eresource_category_tid']['field'] = 'field_ding_eresource_category_tid';
@@ -217,7 +217,7 @@ function ding_eresource_views_default_views() {
   $handler->display->display_options['arguments']['field_ding_eresource_category_tid']['specify_validation'] = TRUE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Type */
+  /* Filterkriterie: Indhold: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -251,7 +251,7 @@ function ding_eresource_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
-  /* Header: Global: Text area */
+  /* Overskrift: Global: Tekstområde */
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
@@ -259,14 +259,14 @@ function ding_eresource_views_default_views() {
   $handler->display->display_options['header']['area']['content'] = '<h3><a href="/temaer/pa-nettet">Online</a></h3>';
   $handler->display->display_options['header']['area']['format'] = 'html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Nid */
+  /* Felt: Indhold: Nid */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
   $handler->display->display_options['fields']['nid']['label'] = '';
   $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
-  /* Field: Global: Math expression */
+  /* Felt: Global: Matematisk udtryk */
   $handler->display->display_options['fields']['expression']['id'] = 'expression';
   $handler->display->display_options['fields']['expression']['table'] = 'views';
   $handler->display->display_options['fields']['expression']['field'] = 'expression';
@@ -275,7 +275,7 @@ function ding_eresource_views_default_views() {
   $handler->display->display_options['fields']['expression']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['expression']['precision'] = '0';
   $handler->display->display_options['fields']['expression']['expression'] = '!1-[nid]';
-  /* Field: Content: Title */
+  /* Felt: Indhold: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -286,7 +286,7 @@ function ding_eresource_views_default_views() {
   $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'active[expression]';
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Global: Null */
+  /* Kontekstuelt filter: Global: Null */
   $handler->display->display_options['arguments']['null']['id'] = 'null';
   $handler->display->display_options['arguments']['null']['table'] = 'views';
   $handler->display->display_options['arguments']['null']['field'] = 'null';
@@ -320,7 +320,6 @@ function ding_eresource_views_default_views() {
     t(','),
     t('Alle'),
     t('E-resources list'),
-    t('more'),
     t('View panes'),
     t('Category description'),
     t('Standardtekst for E-ressourcer'),
